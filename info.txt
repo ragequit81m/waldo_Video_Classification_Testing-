@@ -4,3 +4,80 @@ rest from here
 
 
 
+File output:
+
+
+
+
+C:\keras\ucf101top5>dir
+ Volume in Laufwerk C: hat keine Bezeichnung.
+ Volumeseriennummer: BCD2-AB02
+
+ Verzeichnis von C:\keras\ucf101top5
+
+22.04.2023  23:20    <DIR>          .
+22.04.2023  23:20    <DIR>          ..
+21.04.2023  04:33    <DIR>          goodcode
+22.04.2023  17:31    <DIR>          old_data
+22.04.2023  23:22    <DIR>          test
+22.04.2023  17:30             8.833 test.csv
+22.04.2023  17:36        10.158.208 test_data2.npy
+22.04.2023  17:36             2.112 test_labels2.npy
+22.04.2023  18:08    <DIR>          tmp
+22.04.2023  23:23    <DIR>          train
+22.04.2023  17:29            23.167 train.csv
+22.04.2023  18:00        26.828.928 train_data2.npy
+22.04.2023  18:00             5.368 train_labels2.npy
+22.04.2023  23:14            12.319 train_modell.py
+22.04.2023  07:08    <DIR>          WZ
+               7 Datei(en),     37.038.935 Bytes
+               8 Verzeichnis(se), 116.063.653.888 Bytes frei
+
+C:\keras\ucf101top5>train_modell.py
+Total videos for training: 655
+Total videos for testing: 248
+['COD2019', 'CricketShot', 'PlayingCello', 'Punch', 'ShavingBeard', 'TennisSwing']
+Frame features in train set: (655, 10, 1024)
+Epoch 1/5
+17/18 [===========================>..] - ETA: 0s - loss: 2.4835 - accuracy: 0.5460
+Epoch 1: val_loss improved from inf to 12.25012, saving model to \keras\ucf101top5\tmp\videoclassifier2
+18/18 [==============================] - 2s 76ms/step - loss: 2.4359 - accuracy: 0.5540 - val_loss: 12.2501 - val_accuracy: 0.3838
+Epoch 2/5
+17/18 [===========================>..] - ETA: 0s - loss: 0.2288 - accuracy: 0.9265
+Epoch 2: val_loss did not improve from 12.25012
+18/18 [==============================] - 1s 60ms/step - loss: 0.2370 - accuracy: 0.9227 - val_loss: 12.9492 - val_accuracy: 0.3636
+Epoch 3/5
+17/18 [===========================>..] - ETA: 0s - loss: 0.0799 - accuracy: 0.9761
+Epoch 3: val_loss did not improve from 12.25012
+18/18 [==============================] - 1s 62ms/step - loss: 0.0804 - accuracy: 0.9766 - val_loss: 13.2338 - val_accuracy: 0.3434
+Epoch 4/5
+17/18 [===========================>..] - ETA: 0s - loss: 0.0236 - accuracy: 0.9890
+Epoch 4: val_loss did not improve from 12.25012
+18/18 [==============================] - 1s 61ms/step - loss: 0.0231 - accuracy: 0.9892 - val_loss: 12.9806 - val_accuracy: 0.3434
+Epoch 5/5
+17/18 [===========================>..] - ETA: 0s - loss: 0.0161 - accuracy: 0.9945
+Epoch 5: val_loss did not improve from 12.25012
+18/18 [==============================] - 1s 62ms/step - loss: 0.0211 - accuracy: 0.9928 - val_loss: 12.8408 - val_accuracy: 0.3333
+8/8 [==============================] - 0s 18ms/step - loss: 2.4813 - accuracy: 0.6976
+Test accuracy: 69.76%
+Test video path: C:\keras\ucf101top5\test\v_WZ_g02_C03.mp4
+1/1 [==============================] - 1s 934ms/step
+1/1 [==============================] - 0s 45ms/step
+1/1 [==============================] - 0s 45ms/step
+1/1 [==============================] - 0s 45ms/step
+1/1 [==============================] - 0s 45ms/step
+1/1 [==============================] - 0s 44ms/step
+1/1 [==============================] - 0s 44ms/step
+1/1 [==============================] - 0s 43ms/step
+1/1 [==============================] - 0s 44ms/step
+1/1 [==============================] - 0s 44ms/step
+1/1 [==============================] - 0s 118ms/step
+  ShavingBeard: 65.28%
+  Punch: 13.34%
+  TennisSwing: 11.48%
+  CricketShot:  9.07%
+  PlayingCello:  0.82%
+  COD2019:  0.00%
+
+C:\keras\ucf101top5>
+
