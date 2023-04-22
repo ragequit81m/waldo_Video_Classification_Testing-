@@ -1,0 +1,2 @@
+Test and train folder data from:
+https://github.com/sayakpaul/Action-Recognition-in-TensorFlow/releases/download/v1.0.0/ucf101_top5.tar.gz
